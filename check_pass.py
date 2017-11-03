@@ -106,7 +106,7 @@ def set_remote_url(url):
     _remote_url = url
 
     if not (_remote_url.startswith("http://") or _remote_url.startswith("https://")):
-        _remote_url = "http://" +  _remote_url
+        _remote_url = "https://" +  _remote_url
 
 
 

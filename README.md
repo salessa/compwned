@@ -57,7 +57,7 @@ To search the bloom filter without downloading the full file, the program reques
 **Note, however, an attacker can still see what portions of a file you are accessing. So if you have a hit in the bloom filter, a determined attacker might be able to use the information to narrow down their search**.  
 You can send numerous fake requests to the server if you really want to hide your full access pattern (I plan to provide this implementation over the next few weeks).
 
-##Using and Sharing the Code and Data File
+## Using and Sharing the Code and Data File
 Feel free to copy, modify, or share both the code and the bloom filter file (see LICENSE file). However, keep the following things in mind: 
 1. This is a first iteration and there might be bug fixes and improvements that appear in this repository over the next few weeks.
 2. I am currently not setup to handle a large volume of concurrent requests. So please avoid setting up an application that will send large amounts of requests the the file I am hosting (please download the file if you need to do that)

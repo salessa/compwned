@@ -50,7 +50,8 @@ def _check_remote(offset):
     return found
 
 def _check_local(offset):
-    
+    #TODO: avoid closing and re-opening file 
+
     global _local_file
 
     f = open(_local_file, "r+b")
@@ -74,6 +75,8 @@ def pwned(password, search_remote=False):
 
     found = True
 
+    print "Checking"
+
     if search_remote:
         checker = _check_remote
     else:
@@ -89,10 +92,12 @@ def pwned(password, search_remote=False):
     for i in range(0, NUM_HASHES-1):
         int_hash = int( hashlib.sha1(pass_hash + str(i)).hexdigest(), 16) % BIT_ARRAY_SIZE
         found = found & checker(int_hash)
+        print "...",
+        sys.stdout.flush()
 
         if (not found): return False
 
-
+    print "."
     return found
     
 
@@ -108,6 +113,7 @@ def set_remote_url(url):
     if not (_remote_url.startswith("http://") or _remote_url.startswith("https://")):
         _remote_url = "https://" +  _remote_url
 
+    if DEBUG: print _remote_url
 
 
 #==============================================================

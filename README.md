@@ -1,7 +1,7 @@
 # compwned
 (Compact PWNED)
 
-##Introduction
+## Introduction
 
 Troy Hunt has a service called ["Pwned Passwords"](https://haveibeenpwned.com/Passwords) that provides a list of breached passwords (~320 million passwords so far). The SHA-1 hash of the leaked passwords is provided and can be downloaded or searched online. The aim is to assist users and online services to identify leaked passwords.  You can read about it [here](https://www.troyhunt.com/introducing-306-million-freely-downloadable-pwned-passwords/)
 
@@ -55,7 +55,7 @@ Feel free to copy, modify, or share both the code and the bloom filter file (see
 2. I am currently not setup to handle a large volume of concurrent requests. So please avoid setting up an application that will send large amounts of requests the the file I am hosting (please download the file if you need to do that)
 
 
-##TODO
+## TODO
 
 - Enable searching from inside a browser using a JavaScript implementation
 - Provide slightly larger files with smaller false positive rates

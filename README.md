@@ -10,8 +10,7 @@ There are a couple of challenges that I am trying to address here:
 2. The full breached password list (SHA-1 hashes) is ~13GB when uncompressed. This might make it challenging for some people to download and work with the list on their local machine.
 
 So I have created a compact (**~550MB**) representation of the pwned passwords (a bloom filter essentially - see the "How it Works" section below). The file is currently hosted at: 
-[https://umich.box.com/shared/static/711ty0od6koat9mzqtuzcs9g9mmz8kqq.bin](https://umich.box.com/shared/static/711ty0od6koat9mzqtuzcs9g9mmz8kqq.bin). If you check for a pwned password using this file, you will definitely find it. The catch is that if you search for a *non*-pwned password, there is a 0.1% chance the program will tell you it is pwned (i.e. an ~0.1% false positive). In short, if you cannot find your password in the compressed list, it means it is not is the original list of Pwned passwords.
-(Look at the bottom of this README for additional download locations and checksum).
+[https://web.eecs.umich.edu/~salessaf/hibp_4615205609_10.bin](https://web.eecs.umich.edu/~salessaf/hibp_4615205609_10.bin) (Look at the bottom of this README for additional download locations and checksum). If you check for a pwned password using this file, you will definitely find it. The catch is that if you search for a *non*-pwned password, there is a 0.1% chance the program will tell you it is pwned (i.e. an ~0.1% false positive). In short, if you cannot find your password in the compressed list, it means it is not is the original list of Pwned passwords.
 
 This repository contains a sample Python program/library that lets you search through this bloom filter without sending your password (or its hash) to the remote server. And you do not have to download the large file to your machine! Checking for a single password requires you to access only 10 bytes of data on the remote server. You can optionally download the full bloom filter to your local machine and use this Python program/library to search through it.
 
@@ -26,13 +25,13 @@ Currently I only provide a python implementation for searching through this file
 
 To use one of the files I am currently hosting, simply do:
 
-`./check_pass.py remote "https://umich.box.com/shared/static/711ty0od6koat9mzqtuzcs9g9mmz8kqq.bin"`
+`./check_pass.py remote "https://web.eecs.umich.edu/~salessaf/hibp_4615205609_10.bin"`
 
 (you will then be prompted to enter the password you want to search)
 
 Optionally you can supply the password as a command line parameter:
 
-`./check_pass.py remote "https://umich.box.com/shared/static/711ty0od6koat9mzqtuzcs9g9mmz8kqq.bin" [password]`
+`./check_pass.py remote "https://web.eecs.umich.edu/~salessaf/hibp_4615205609_10.bin" [password]`
 
 **2. Searching through a local file:**
 First, download the file to your local machine. Then, simply run:
@@ -62,11 +61,13 @@ Feel free to copy, modify, or share both the code and the bloom filter file (see
 1. This is a first iteration and there might be bug fixes and improvements that appear in this repository over the next few weeks.
 2. I am currently not setup to handle a large volume of concurrent requests. So please avoid setting up an application that will send large amounts of requests the the file I am hosting (please download the file if you need to do that)
 
-Here are two different links to download the bloom filter from:
-
-http://www-personal.umich.edu/~salessaf/hibp_4615205609_10.bin
+Here are different links to download the bloom filter from:
 
 https://umich.box.com/shared/static/711ty0od6koat9mzqtuzcs9g9mmz8kqq.bin
+
+https://web.eecs.umich.edu/~salessaf/hibp_4615205609_10.bin
+
+http://www-personal.umich.edu/~salessaf/hibp_4615205609_10.bin
 
 
 (SHA-1 checksum: 46399228026c257bab80d947c17890a725b39afc)

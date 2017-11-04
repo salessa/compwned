@@ -72,7 +72,7 @@ http://www-personal.umich.edu/~salessaf/hibp_4615205609_10.bin
 
 (SHA-1 checksum: 46399228026c257bab80d947c17890a725b39afc)
 
-
+You can generate your own file using the code in the generator folder.
 
 ## TODO
 

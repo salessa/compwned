@@ -1,5 +1,5 @@
 
-ComPWNED is a free app that lets you safely check if your password has appeared among 320 million password that have been breached and exposed online. 
+ComPWNED is a free app that lets you safely check if your password has appeared among 320 million passwords that have been breached and exposed online. 
 
 The software comes packaged with a compact database of breached passwords. 
 - If the application tells you your password is *not* in the list, it means it is not is not among the 320 million breached passwords. 

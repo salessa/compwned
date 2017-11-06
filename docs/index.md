@@ -17,7 +17,7 @@ The full password database (13GBs when uncompressed) is compiled by [Troy Hunt](
 
 No installation is required on Windows 8 and Windows 10. On some earlier versions of Windows you many need to install [Microsoft .NET Framework 4.5](https://www.microsoft.com/en-us/download/details.aspx?id=30653) first.
 
-1. Simply download the zip[https://umich.box.com/shared/static/dbqfmsomjscrwyu3wklta6m9u9wbwk97.zip] file to your computer (~550MBs). 
+1. Simply download the [zip](https://umich.box.com/shared/static/dbqfmsomjscrwyu3wklta6m9u9wbwk97.zip) file to your computer (~550MBs). 
 2. Unzip the file
 3. Run ComPWNED and enter your password.
 

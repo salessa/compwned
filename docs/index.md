@@ -1,19 +1,24 @@
 
-ComPWNED is a free Windows app that lets you safely check if your password has appeared among 320 million password that have been breached and exposed online. 
+ComPWNED is a free app that lets you safely check if your password has appeared among 320 million password that have been breached and exposed online. 
 
-The software comes packaged with a compact database of breached databases. If you cannot find your password in this compressed list, it means it is not is not among the 320 million breached passwords. 
+The software comes packaged with a compact database of breached databases. If you cannot find your password in this compressed list, it means it is not is not among the 320 million breached passwords. If the application tells you that the password is exposed, there is 99.9% chance it has appeared in a list of breached passwords.
 
 The program does **not** access any online database and keeps your password safe!
-
 
 The full password database (13GBs when uncompressed) is compiled by [Troy Hunt](https://www.troyhunt.com/) and is available at [haveibeenpwned.com](https://haveibeenpwned.com/Passwords).
 
 
+## Downloads
+[ComPWNED-Windows.zip](https://github.com/salessa/compwned) (for Windows 64-bit)
+
 ## How Do I Use It?
 
-1. Download the ZIP file on your computer (~550MBs). 
-2. Unzip th file
-3. Run ComPWNED
+No installation is required on Windows 8 and Windows 10. On earlier versions of Windows you many need to  [Microsoft .NET Framework 4.5] (https://www.microsoft.com/en-us/download/details.aspx?id=30653) first.
+
+1. Simply download the zip[https://github.com/salessa/compwned] file to your computer (~550MBs). 
+2. Unzip the file
+3. Run ComPWNED and enter your password.
+
 
 
 ## Linux and Mac Users macOS
@@ -24,6 +29,8 @@ There is python program along with instructions available at [https://github.com
 The password list that is shipped with this app is stored as bloom filter. This [link](https://llimllib.github.io/bloomfilter-tutorial/) provides a good description of bloom filters.
 
 The file that is provided has 46,15,205,609 bits and requires 10 independent SHA-1 hash computations to index into it. With this setup, the theoretical false positive probability is 0.1%.
+
+You can view the full source code on https://github.com/salessa/compwned.
 
 ## License Agreement
 

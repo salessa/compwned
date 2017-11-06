@@ -5,13 +5,14 @@ The software comes packaged with a compact database of breached passwords.
 - If the application tells you your password is *not* in the list, it means it is not is not among the 320 million breached passwords. 
 - If the application tells you that the password is exposed, there is 99.9% chance it has appeared in a list of breached passwords in the past.
 
-The program does **not** access any online database and keeps your password safe!
+**The program does not access any online database and keeps your password safe!**
 
 The full password database (13GBs when uncompressed) is compiled by [Troy Hunt](https://www.troyhunt.com/) and is available at [haveibeenpwned.com](https://haveibeenpwned.com/Passwords).
 
 
 ## Downloads (Beta)
 [ComPWNED-Windows-Beta.zip](https://umich.box.com/shared/static/dbqfmsomjscrwyu3wklta6m9u9wbwk97.zip) (for Windows 64-bit)
+(**Must be extracted (unzipped) before running.**)
 
 ## How Do I Use It?
 
@@ -20,6 +21,7 @@ No installation is required on Windows 8 and Windows 10. On some earlier version
 1. Simply download the [zip](https://umich.box.com/shared/static/dbqfmsomjscrwyu3wklta6m9u9wbwk97.zip) file to your computer (~550MBs). 
 2. Unzip the file
 3. Run ComPWNED and enter your password.
+(**If are feeling a little paranoid, disconnect from the network before running the software.**)
 
 
 

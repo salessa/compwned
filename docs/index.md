@@ -29,7 +29,7 @@ No installation is required on Windows 8 and Windows 10. On some earlier version
 
 
 
-## Linux and Mac Users macOS
+## Linux and MacOS Users 
 There is python program along with instructions available at [https://github.com/salessa/compwned](https://github.com/salessa/compwned).  Currently there is no graphical implementation for other platforms.
 
 

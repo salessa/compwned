@@ -3,6 +3,9 @@ ComPWNED is a free app that lets you safely check if your password has appeared 
 
 **The program does not access any online database and keeps your password safe!**
 
+![alt text](screenshot.png)
+
+
 ## Downloads (Beta)
 [**ComPWNED-Windows-Beta.zip**](https://umich.box.com/shared/static/dbqfmsomjscrwyu3wklta6m9u9wbwk97.zip) (for Windows 64-bit)
 

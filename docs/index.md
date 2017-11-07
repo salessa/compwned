@@ -1,17 +1,18 @@
 
 ComPWNED is a free app that lets you safely check if your password has appeared among 320 million passwords that have been breached and exposed online. 
 
+**The program does not access any online database and keeps your password safe!**
+
+## Downloads (Beta)
+[**ComPWNED-Windows-Beta.zip**](https://umich.box.com/shared/static/dbqfmsomjscrwyu3wklta6m9u9wbwk97.zip) (for Windows 64-bit)
+
 The software comes packaged with a compact database of breached passwords. 
 - If the application tells you your password is *not* in the list, it means it is not is not among the 320 million breached passwords. 
 - If the application tells you that the password is exposed, there is 99.9% chance it has appeared in a list of breached passwords in the past.
 
-**The program does not access any online database and keeps your password safe!**
-
 The full password database (13GBs when uncompressed) is compiled by [Troy Hunt](https://www.troyhunt.com/) and is available at [haveibeenpwned.com](https://haveibeenpwned.com/Passwords).
 
 
-## Downloads (Beta)
-[ComPWNED-Windows-Beta.zip](https://umich.box.com/shared/static/dbqfmsomjscrwyu3wklta6m9u9wbwk97.zip) (for Windows 64-bit)
 (**Must be extracted (unzipped) before running.**)
 
 ## How Do I Use It?

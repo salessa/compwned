@@ -1,6 +1,12 @@
 # compwned
 (Compact PWNED)
 
+**[Click here](https://salessa.github.io/compwned/) if you are looking for the Windows application** 
+
+( It lets you safely check if your password is breached right from your local windows machine. It comes packaged with a compact version of the exposed passwords ).
+
+This respository contains a **Python program/library and a C# application** that let you search through a compressed database of breached passwords *without* sending your password (or its hash) to the remote server.
+
 ## Introduction
 
 Troy Hunt has a service called ["Pwned Passwords"](https://haveibeenpwned.com/Passwords) that provides a list of breached passwords (~320 million passwords so far). The SHA-1 hash of the leaked passwords is provided and can be downloaded or searched online. The aim is to assist users and online services to identify leaked passwords.  You can read about it [here](https://www.troyhunt.com/introducing-306-million-freely-downloadable-pwned-passwords/)
@@ -15,7 +21,9 @@ So I have created a compact (**~550MB**) representation of the pwned passwords (
 This repository contains a sample Python program/library that lets you search through this bloom filter without sending your password (or its hash) to the remote server. And you do not have to download the large file to your machine! Checking for a single password requires you to access only 10 bytes of data on the remote server. You can optionally download the full bloom filter to your local machine and use this Python program/library to search through it.
 
 ## Example Usage
-Currently I only provide a python implementation for searching through this file. There are two ways to use this it:
+Currently I only provide a python and a C# implementation for searching through this file. 
+
+There are two ways to use the python script:
 
 **1. Searching through a remote file (without downloading file):**
 (this does not transmit your passwords to the remote server - see "How it Works" below)

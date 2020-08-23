@@ -1,10 +1,6 @@
 # compwned
 (Compact PWNED)
 
-**[Click here](https://salessa.github.io/compwned/) if you are looking for the Windows application** 
-
-( It lets you safely check if your password is breached right from your local windows machine. It comes packaged with a compact version of the exposed passwords ).
-
 This respository contains a **Python program/library and a C# application** that let you search through a compressed database of breached passwords *without* sending your password (or its hash) to the remote server.
 
 ## Introduction
